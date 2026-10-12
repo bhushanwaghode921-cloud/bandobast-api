@@ -34,7 +34,7 @@ public class RejectionTemplateController {
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
             service.addRejectionTemplate(rejectionTemplate);
-            return new ResponseEntity<>(HttpStatus.OK);
+            return new ResponseEntity<>(rejectionTemplate, HttpStatus.OK);
         }catch (Exception e){
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }

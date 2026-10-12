@@ -34,7 +34,7 @@ public class BandobastTypeController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<>(type, HttpStatus.OK);
-    }
+
 
     @PostMapping("/bandobast-type")
     public ResponseEntity<BandobastType> createBandobastType(@RequestBody BandobastType bandobastType) {

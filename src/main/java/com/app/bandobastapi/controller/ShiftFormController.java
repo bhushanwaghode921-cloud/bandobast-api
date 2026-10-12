@@ -15,6 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/form")
+@CrossOrigin
 public class ShiftFormController {
     @Autowired
     ShiftFormService service;
